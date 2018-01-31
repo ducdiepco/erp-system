@@ -1,0 +1,3 @@
+project=services
+test=rspec
+template=haml

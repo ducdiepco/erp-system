@@ -1,0 +1,327 @@
+GIT
+  remote: https://github.com/hanami/assets.git
+  revision: 260751560ec47fbb6e7582ed4941f18f06035b50
+  branch: develop
+  specs:
+    hanami-assets (1.1.0)
+      hanami-helpers (~> 1.1)
+      hanami-utils (~> 1.1)
+      tilt (~> 2.0, >= 2.0.2)
+
+GIT
+  remote: https://github.com/hanami/cli.git
+  revision: 70699853e6356ea8213f1b4ed5f6bdbf56f913ac
+  branch: develop
+  specs:
+    hanami-cli (0.1.0)
+      concurrent-ruby (~> 1.0)
+      hanami-utils (~> 1.1)
+
+GIT
+  remote: https://github.com/hanami/controller.git
+  revision: f315b4e032e8906e1eff32ab9577249788470146
+  branch: develop
+  specs:
+    hanami-controller (1.1.1)
+      hanami-utils (~> 1.1)
+      rack (~> 2.0)
+
+GIT
+  remote: https://github.com/hanami/hanami.git
+  revision: 66e1669f58ad7551914e2b7b99b40e09e9c6d015
+  branch: develop
+  specs:
+    hanami (1.1.0)
+      bundler
+      concurrent-ruby (~> 1.0)
+      hanami-assets (~> 1.1)
+      hanami-cli (~> 0.1)
+      hanami-controller (~> 1.1)
+      hanami-helpers (~> 1.1)
+      hanami-mailer (~> 1.1)
+      hanami-router (~> 1.1)
+      hanami-utils (~> 1.1)
+      hanami-validations (~> 1.1)
+      hanami-view (~> 1.1)
+
+GIT
+  remote: https://github.com/hanami/helpers.git
+  revision: 2b35e8a92242c1a1c9422e6aeb88cba3c1f7b0c6
+  branch: develop
+  specs:
+    hanami-helpers (1.1.1)
+      hanami-utils (~> 1.1)
+
+GIT
+  remote: https://github.com/hanami/mailer.git
+  revision: c5a2433daeaa8593ed334f0622684fe55cb9203b
+  branch: develop
+  specs:
+    hanami-mailer (1.1.0)
+      hanami-utils (~> 1.1)
+      mail (~> 2.6)
+      tilt (~> 2.0, >= 2.0.1)
+
+GIT
+  remote: https://github.com/hanami/model.git
+  revision: 22eb4b172cb5a0a271f07e5fbafe137e903ae326
+  branch: develop
+  specs:
+    hanami-model (1.1.0)
+      concurrent-ruby (~> 1.0)
+      dry-types (~> 0.11.0)
+      hanami-utils (~> 1.1)
+      rom (~> 3.3, >= 3.3.3)
+      rom-repository (~> 1.4)
+      rom-sql (~> 1.3, >= 1.3.5)
+
+GIT
+  remote: https://github.com/hanami/router.git
+  revision: a60c133d45b630d900967a74a710c5cb3438d3ad
+  branch: develop
+  specs:
+    hanami-router (1.1.0)
+      hanami-utils (~> 1.1)
+      http_router (= 0.11.2)
+      rack (~> 2.0)
+
+GIT
+  remote: https://github.com/hanami/utils.git
+  revision: b79c2859dbcf16b37f2d961f032ffb9be796f075
+  branch: develop
+  specs:
+    hanami-utils (1.1.1)
+      concurrent-ruby (~> 1.0)
+      transproc (~> 1.0)
+
+GIT
+  remote: https://github.com/hanami/validations.git
+  revision: b9d4042dd8408a3f736c2d8e33171ce2d703abc3
+  branch: develop
+  specs:
+    hanami-validations (1.1.0)
+      dry-validation (~> 0.11)
+      hanami-utils (~> 1.1)
+
+GIT
+  remote: https://github.com/hanami/view.git
+  revision: e8e91d8c190ae0adb6b82ff0d007c3c7c7c0882e
+  branch: develop
+  specs:
+    hanami-view (1.1.0)
+      hanami-utils (~> 1.1)
+      tilt (~> 2.0, >= 2.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    binding_of_caller (0.8.0)
+      debug_inspector (>= 0.0.1)
+    byebug (9.1.0)
+    capybara (2.17.0)
+      addressable
+      mini_mime (>= 0.1.3)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (>= 2.0, < 4.0)
+    coderay (1.1.2)
+    concurrent-ruby (1.0.5)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
+    curb (0.9.4)
+    database_cleaner (1.6.2)
+    debug_inspector (0.0.3)
+    diff-lcs (1.3)
+    dotenv (2.2.1)
+    dry-auto_inject (0.4.5)
+      dry-container (>= 0.3.4)
+    dry-configurable (0.7.0)
+      concurrent-ruby (~> 1.0)
+    dry-container (0.6.0)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.1, >= 0.1.3)
+    dry-core (0.4.2)
+      concurrent-ruby (~> 1.0)
+    dry-equalizer (0.2.0)
+    dry-inflector (0.1.1)
+    dry-initializer (1.4.1)
+    dry-logic (0.4.2)
+      dry-container (~> 0.2, >= 0.2.6)
+      dry-core (~> 0.2)
+      dry-equalizer (~> 0.2)
+    dry-matcher (0.7.0)
+    dry-monads (0.4.0)
+      dry-core (~> 0.3, >= 0.3.3)
+      dry-equalizer
+    dry-struct (0.3.1)
+      dry-configurable (~> 0.1)
+      dry-core (~> 0.3)
+      dry-equalizer (~> 0.2)
+      dry-types (~> 0.9, >= 0.9.0)
+      ice_nine (~> 0.11)
+    dry-system (0.9.1)
+      concurrent-ruby (~> 1.0)
+      dry-auto_inject (>= 0.4.0)
+      dry-configurable (~> 0.7, >= 0.7.0)
+      dry-container (~> 0.6)
+      dry-core (>= 0.3.1)
+      dry-equalizer (~> 0.2)
+      dry-inflector (~> 0.1)
+      dry-struct (~> 0.3)
+    dry-types (0.11.1)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.1)
+      dry-container (~> 0.3)
+      dry-core (~> 0.2, >= 0.2.1)
+      dry-equalizer (~> 0.2)
+      dry-logic (~> 0.4, >= 0.4.0)
+      inflecto (~> 0.0.0, >= 0.0.2)
+    dry-validation (0.11.0)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.1, >= 0.1.3)
+      dry-core (~> 0.2, >= 0.2.1)
+      dry-equalizer (~> 0.2)
+      dry-logic (~> 0.4, >= 0.4.0)
+      dry-types (~> 0.11.0)
+    fabrication (2.20.1)
+    faker (1.8.7)
+      i18n (>= 0.7)
+    haml (5.0.4)
+      temple (>= 0.8.0)
+      tilt
+    hanami-fabrication (0.1.0)
+      fabrication (~> 2.16)
+      hanami-utils (< 2.0)
+    hashdiff (0.3.7)
+    http_router (0.11.2)
+      rack (>= 1.0.0)
+      url_mount (~> 0.2.1)
+    i18n (0.9.3)
+      concurrent-ruby (~> 1.0)
+    ice_nine (0.11.2)
+    inflecto (0.0.2)
+    interception (0.5)
+    mail (2.7.0)
+      mini_mime (>= 0.1.1)
+    method_source (0.9.0)
+    mini_mime (1.0.0)
+    mini_portile2 (2.3.0)
+    nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
+    pg (1.0.0)
+    pry (0.11.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    pry-byebug (3.5.1)
+      byebug (~> 9.1)
+      pry (~> 0.10)
+    pry-rescue (1.4.5)
+      interception (>= 0.5)
+      pry
+    pry-stack_explorer (0.4.9.2)
+      binding_of_caller (>= 0.7)
+      pry (>= 0.9.11)
+    public_suffix (3.0.1)
+    rack (2.0.3)
+    rack-test (0.8.2)
+      rack (>= 1.0, < 3)
+    rake (12.3.0)
+    rom (3.3.3)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.3)
+      dry-equalizer (~> 0.2)
+      dry-initializer (~> 1.3)
+      dry-types (~> 0.9, >= 0.9.4)
+      rom-mapper (~> 0.5, >= 0.5.1)
+    rom-mapper (0.5.1)
+      dry-core (~> 0.2, >= 0.2.3)
+      dry-equalizer (~> 0.2)
+      transproc (~> 1.0)
+    rom-repository (1.4.0)
+      dry-core (~> 0.3, >= 0.3.1)
+      dry-struct (~> 0.3)
+      rom (~> 3.3)
+      rom-mapper (~> 0.5)
+    rom-sql (1.3.5)
+      dry-core (~> 0.3)
+      dry-equalizer (~> 0.2)
+      dry-types (~> 0.11.0)
+      rom (~> 3.2, >= 3.2.2)
+      sequel (~> 4.43)
+    rspec (3.7.0)
+      rspec-core (~> 3.7.0)
+      rspec-expectations (~> 3.7.0)
+      rspec-mocks (~> 3.7.0)
+    rspec-core (3.7.1)
+      rspec-support (~> 3.7.0)
+    rspec-expectations (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-hanami (0.2.0)
+      hanami
+      rspec
+    rspec-mocks (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-support (3.7.1)
+    safe_yaml (1.0.4)
+    sequel (4.49.0)
+    shotgun (0.9.2)
+      rack (>= 1.0)
+    temple (0.8.0)
+    tilt (2.0.8)
+    transproc (1.0.2)
+    url_mount (0.2.1)
+      rack
+    vcr (4.0.0)
+    webmock (3.3.0)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
+    xpath (3.0.0)
+      nokogiri (~> 1.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  byebug
+  capybara
+  curb
+  database_cleaner
+  dotenv (~> 2.0)
+  dry-initializer
+  dry-matcher
+  dry-monads
+  dry-system
+  faker
+  haml
+  hanami!
+  hanami-assets!
+  hanami-cli!
+  hanami-controller!
+  hanami-fabrication
+  hanami-helpers!
+  hanami-mailer!
+  hanami-model!
+  hanami-router!
+  hanami-utils!
+  hanami-validations!
+  hanami-view!
+  pg
+  pry
+  pry-byebug
+  pry-rescue
+  pry-stack_explorer
+  rake
+  rspec
+  rspec-hanami
+  shotgun
+  vcr
+  webmock
+
+BUNDLED WITH
+   1.16.1
