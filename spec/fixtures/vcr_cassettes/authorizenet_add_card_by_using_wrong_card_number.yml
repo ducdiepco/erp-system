@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://apitest.authorize.net/xml/v1/request.api
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="utf-8"?>
+        <createCustomerPaymentProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+          <merchantAuthentication>
+            <name>8caVU68X</name>
+            <transactionKey>2Qan5nQ2r994Kg59</transactionKey>
+          </merchantAuthentication>
+          <clientId>sdk-ruby-1.9.4</clientId>
+          <customerProfileId>1814508654</customerProfileId>
+          <paymentProfile>
+            <billTo>
+              <firstName>test_first_name2</firstName>
+              <lastName>test_last_name2</lastName>
+              <address>267 State Dr</address>
+              <city>Denver</city>
+              <state>CO</state>
+              <zip>80246</zip>
+              <country>US</country>
+            </billTo>
+            <payment>
+              <creditCard>
+                <cardNumber>44000000000</cardNumber>
+                <expirationDate>2020-10</expirationDate>
+                <cardCode>122</cardCode>
+              </creditCard>
+            </payment>
+            <defaultPaymentProfile>true</defaultPaymentProfile>
+          </paymentProfile>
+        </createCustomerPaymentProfileRequest>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - text/xml
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/xml; charset=utf-8
+      X-Opnet-Transaction-Trace:
+      - a2_4953ebd5-b9ec-4873-a258-6cf63b65c64f-8100-4739780
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - PUT,OPTIONS,POST,GET
+      Access-Control-Allow-Headers:
+      - x-requested-with,cache-control,content-type,origin,method,SOAPAction
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Cnection:
+      - close
+      Content-Length:
+      - '411'
+      Date:
+      - Thu, 08 Feb 2018 16:52:24 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48Y3JlYXRlQ3VzdG9tZXJQYXltZW50UHJvZmlsZVJlc3BvbnNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zPSJBbmV0QXBpL3htbC92MS9zY2hlbWEvQW5ldEFwaVNjaGVtYS54c2QiPjxtZXNzYWdlcz48cmVzdWx0Q29kZT5FcnJvcjwvcmVzdWx0Q29kZT48bWVzc2FnZT48Y29kZT5FMDAwMTU8L2NvZGU+PHRleHQ+VGhlIGZpZWxkIGxlbmd0aCBpcyBpbnZhbGlkIGZvciBDYXJkIE51bWJlci48L3RleHQ+PC9tZXNzYWdlPjwvbWVzc2FnZXM+PC9jcmVhdGVDdXN0b21lclBheW1lbnRQcm9maWxlUmVzcG9uc2U+
+    http_version: 
+  recorded_at: Thu, 08 Feb 2018 16:52:24 GMT
+recorded_with: VCR 4.0.0

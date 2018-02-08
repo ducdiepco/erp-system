@@ -1,7 +1,8 @@
 require 'bundler/setup'
 require 'hanami/setup'
 require 'hanami/model'
-require_relative '../lib/services'
+require_relative '../system/import'
+require_relative '../lib/coreapp'
 require_relative '../apps/payment_api/application'
 require_relative '../apps/web/application'
 
@@ -30,7 +31,7 @@ Hanami.configure do
   end
 
   mailer do
-    root 'lib/services/mailers'
+    root 'lib/coreapp/mailers'
 
     # See http://hanamirb.org/guides/mailers/delivery
     delivery :test
@@ -43,6 +44,7 @@ Hanami.configure do
 
   environment :production do
     logger level: :info, formatter: :json, filter: []
+    # logger 'daily', level: :debug, formatter: :json, stream: 'log/production.log'
 
     mailer do
       delivery :smtp, address: ENV['SMTP_HOST'], port: ENV['SMTP_PORT']

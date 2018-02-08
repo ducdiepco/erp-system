@@ -1,0 +1,29 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://secure.paylinedatagateway.com/api/transact.php
+    body:
+      encoding: UTF-8
+      string: username=Isweep631&password=4aCtPCLoYhbBFVVEymLuXcKq&transactionid=3979752005&amount=10.0&type=refund
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 07 Feb 2018 16:17:53 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '259'
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: ASCII-8BIT
+      string: response=3&responsetext=Refund amount may not exceed the transaction
+        balance REFID:3506214938&authcode=&transactionid=&avsresponse=&cvvresponse=&orderid=&type=refund&response_code=300&customer_vault_id=&amount_authorized=&xid=&account_holder_type=&billing_id=
+    http_version: 
+  recorded_at: Wed, 07 Feb 2018 16:17:53 GMT
+recorded_with: VCR 4.0.0

@@ -1,4 +1,4 @@
-RSpec.describe PaymentApi::Controllers::Payments::Charge, type: :action do
+RSpec.describe PaymentApi::Controllers::Payments::Test, type: :action do
   let(:action) { described_class.new }
   let(:params) { Hash[] }
 

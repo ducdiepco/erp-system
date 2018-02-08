@@ -1,0 +1,28 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://secure.paylinedatagateway.com/api/transact.php
+    body:
+      encoding: UTF-8
+      string: username=Isweep631&password=4aCtPCLoYhbBFVVEymLuXcKq&amount=10.0&customer_vault_id=1111111
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Feb 2018 22:08:40 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '236'
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: ASCII-8BIT
+      string: response=3&responsetext=Invalid Customer Vault ID specified REFID:3506165921&authcode=&transactionid=&avsresponse=&cvvresponse=&orderid=&type=&response_code=300&customer_vault_id=&amount_authorized=&xid=&account_holder_type=&billing_id=
+    http_version: 
+  recorded_at: Tue, 06 Feb 2018 22:08:40 GMT
+recorded_with: VCR 4.0.0

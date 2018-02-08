@@ -1,0 +1,28 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://secure.paylinedatagateway.com/api/transact.php
+    body:
+      encoding: UTF-8
+      string: username=Isweep631&password=4aCtPCLoYhbBFVVEymLuXcKq&ccnumber=4111111111111111&ccexp=10/2020&cvv=123&firstname=test_first_name&lastname=test_last_name&country=US&email=email@email.com&customer_vault=add_customer
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 02 Feb 2018 16:23:25 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '215'
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: ASCII-8BIT
+      string: response=1&responsetext=Customer Added&authcode=&transactionid=&avsresponse=&cvvresponse=&orderid=&type=&response_code=100&customer_vault_id=434998374&amount_authorized=&xid=&account_holder_type=&billing_id=41209806
+    http_version: 
+  recorded_at: Fri, 02 Feb 2018 16:23:25 GMT
+recorded_with: VCR 4.0.0

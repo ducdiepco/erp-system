@@ -22,6 +22,9 @@ gem 'dry-monads'
 gem 'dry-system'
 gem 'dry-initializer'
 gem 'curb'
+gem 'hanami-events'
+gem 'hanami-serializer', github: 'davydovanton/hanami-serializer'
+gem 'authorizenet'
 
 group :development do
   # Code reloading
@@ -42,8 +45,8 @@ end
 
 group :test do
   gem 'rspec'
+  gem 'rspec-hanami', github: 'davydovanton/rspec-hanami'
   gem 'capybara'
-  gem 'rspec-hanami'
   gem 'webmock'
   gem 'vcr'
   gem 'hanami-fabrication'
@@ -51,5 +54,6 @@ group :test do
 end
 
 group :production do
-  # gem 'puma'
+  gem 'puma'
+  gem 'public_suffix', '~> 1.5', '>= 1.5.1'
 end

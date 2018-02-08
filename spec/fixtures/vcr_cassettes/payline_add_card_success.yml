@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://secure.paylinedatagateway.com/api/transact.php
+    body:
+      encoding: UTF-8
+      string: username=Isweep631&password=4aCtPCLoYhbBFVVEymLuXcKq&ccnumber=4111111111111111&ccexp=10/2020&cvv=122&firstname=test_first_name2&lastname=test_last_name2&address1=267
+        State Dr&city=Denver&state=CO&zip=80246&country=US&email=email@email2.com&customer_vault_id=667749310&customer_vault=update_customer
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 08 Feb 2018 17:49:33 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '228'
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: ASCII-8BIT
+      string: response=1&responsetext=Customer Update Successful&authcode=&transactionid=&avsresponse=&cvvresponse=&orderid=&type=&response_code=100&customer_vault_id=667749310&amount_authorized=&xid=&account_holder_type=&billing_id=274098849
+    http_version: 
+  recorded_at: Thu, 08 Feb 2018 17:49:33 GMT
+- request:
+    method: post
+    uri: https://secure.paylinedatagateway.com/api/transact.php
+    body:
+      encoding: UTF-8
+      string: username=Isweep631&password=4aCtPCLoYhbBFVVEymLuXcKq&ccnumber=4111111111111111&ccexp=10/2020&cvv=122&firstname=test_first_name2&lastname=test_last_name2&address1=267
+        State Dr&city=Denver&state=CO&zip=80246&country=US&email=email@email2.com&customer_vault_id=667749310&customer_vault=update_customer
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 08 Feb 2018 17:50:38 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '228'
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: ASCII-8BIT
+      string: response=1&responsetext=Customer Update Successful&authcode=&transactionid=&avsresponse=&cvvresponse=&orderid=&type=&response_code=100&customer_vault_id=667749310&amount_authorized=&xid=&account_holder_type=&billing_id=274098849
+    http_version: 
+  recorded_at: Thu, 08 Feb 2018 17:50:38 GMT
+recorded_with: VCR 4.0.0

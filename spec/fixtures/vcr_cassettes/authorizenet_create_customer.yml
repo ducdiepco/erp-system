@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://apitest.authorize.net/xml/v1/request.api
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="utf-8"?>
+        <createCustomerProfileRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+          <merchantAuthentication>
+            <name>8caVU68X</name>
+            <transactionKey>2Qan5nQ2r994Kg59</transactionKey>
+          </merchantAuthentication>
+          <clientId>sdk-ruby-1.9.4</clientId>
+          <profile>
+            <description>test_first_name2 test_last_name2</description>
+            <email>email@email2.com</email>
+            <paymentProfiles>
+              <billTo>
+                <firstName>test_first_name2</firstName>
+                <lastName>test_last_name2</lastName>
+                <address>267 State Dr</address>
+                <city>Denver</city>
+                <state>CO</state>
+                <zip>80246</zip>
+                <country>US</country>
+              </billTo>
+              <payment>
+                <creditCard>
+                  <cardNumber>4111111111111111</cardNumber>
+                  <expirationDate>2020-10</expirationDate>
+                  <cardCode>122</cardCode>
+                </creditCard>
+              </payment>
+            </paymentProfiles>
+          </profile>
+        </createCustomerProfileRequest>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - text/xml
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/xml; charset=utf-8
+      X-Opnet-Transaction-Trace:
+      - a2_6a23c6d8-9c91-4757-8331-c6da4b8a9d5c-8504-880315
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - PUT,OPTIONS,POST,GET
+      Access-Control-Allow-Headers:
+      - x-requested-with,cache-control,content-type,origin,method,SOAPAction
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '577'
+      Date:
+      - Wed, 07 Feb 2018 18:30:06 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48Y3JlYXRlQ3VzdG9tZXJQcm9maWxlUmVzcG9uc2UgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM6eHNkPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgeG1sbnM9IkFuZXRBcGkveG1sL3YxL3NjaGVtYS9BbmV0QXBpU2NoZW1hLnhzZCI+PG1lc3NhZ2VzPjxyZXN1bHRDb2RlPk9rPC9yZXN1bHRDb2RlPjxtZXNzYWdlPjxjb2RlPkkwMDAwMTwvY29kZT48dGV4dD5TdWNjZXNzZnVsLjwvdGV4dD48L21lc3NhZ2U+PC9tZXNzYWdlcz48Y3VzdG9tZXJQcm9maWxlSWQ+MTUwMzMxNzI2OTwvY3VzdG9tZXJQcm9maWxlSWQ+PGN1c3RvbWVyUGF5bWVudFByb2ZpbGVJZExpc3Q+PG51bWVyaWNTdHJpbmc+MTUwMjY3MjQwODwvbnVtZXJpY1N0cmluZz48L2N1c3RvbWVyUGF5bWVudFByb2ZpbGVJZExpc3Q+PGN1c3RvbWVyU2hpcHBpbmdBZGRyZXNzSWRMaXN0IC8+PHZhbGlkYXRpb25EaXJlY3RSZXNwb25zZUxpc3QgLz48L2NyZWF0ZUN1c3RvbWVyUHJvZmlsZVJlc3BvbnNlPg==
+    http_version: 
+  recorded_at: Wed, 07 Feb 2018 18:30:06 GMT
+recorded_with: VCR 4.0.0

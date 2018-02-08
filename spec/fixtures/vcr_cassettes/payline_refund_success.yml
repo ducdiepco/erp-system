@@ -1,0 +1,28 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://secure.paylinedatagateway.com/api/transact.php
+    body:
+      encoding: UTF-8
+      string: username=Isweep631&password=4aCtPCLoYhbBFVVEymLuXcKq&transactionid=3972855846&amount=10.0&type=refund
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Feb 2018 23:17:50 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '207'
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: ASCII-8BIT
+      string: response=1&responsetext=SUCCESS&authcode=&transactionid=3972859117&avsresponse=&cvvresponse=&orderid=&type=refund&response_code=100&customer_vault_id=&amount_authorized=&xid=&account_holder_type=&billing_id=
+    http_version: 
+  recorded_at: Thu, 01 Feb 2018 23:17:51 GMT
+recorded_with: VCR 4.0.0

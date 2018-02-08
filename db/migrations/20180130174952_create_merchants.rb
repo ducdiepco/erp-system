@@ -5,6 +5,7 @@ Hanami::Model.migration do
 
       column :is_type, String, null: false, index: true, unique: true
       column :title, String, null: false
+      column :merchant, String, null: false
       column :metadata, 'jsonb', null: false
 
       column :created_at, DateTime, null: false

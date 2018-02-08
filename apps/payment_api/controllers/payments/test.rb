@@ -1,9 +1,8 @@
 module PaymentApi::Controllers::Payments
-  class Charge
+  class Test
     include PaymentApi::Action
 
     def call(params)
-      self.body = 'OK'
     end
   end
 end
