@@ -2,8 +2,9 @@ module PaymentApi::Commands
   class Merchant
     include Dry::Monads::Try::Mixin
     include Import[
-      merchant_repo: 'repositories.merchant',
-      merchant_service: 'payment_api.services.merchant'
+      merchant_repo:    'repositories.merchant',
+      merchant_service: 'payment_api.services.merchant',
+      events: 'events'
     ]
 
     alias m method
@@ -37,7 +38,7 @@ module PaymentApi::Commands
     end
 
     def broad_cast_event input, params, event
-      # WIP
+      events.broadcast(event, params: params, input: input.to_hash)
       input
     end
 

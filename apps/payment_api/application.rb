@@ -11,7 +11,8 @@ module PaymentApi
       load_paths << [
         'controllers',
         'views',
-        'commands'
+        'commands',
+        'events'
       ]
       routes 'config/routes'
 

@@ -15,6 +15,13 @@ GIT
       rspec
 
 GIT
+  remote: git://github.com/hanami/events.git
+  revision: 7c5d233d3ea64783277d5e3a5147fdbd10b58bae
+  specs:
+    hanami-events (0.1.0)
+      dry-container (~> 0.6)
+
+GIT
   remote: https://github.com/hanami/assets.git
   revision: 260751560ec47fbb6e7582ed4941f18f06035b50
   branch: develop
@@ -153,6 +160,7 @@ GEM
       xpath (>= 2.0, < 4.0)
     coderay (1.1.2)
     concurrent-ruby (1.0.5)
+    connection_pool (2.2.1)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     curb (0.9.4)
@@ -216,7 +224,6 @@ GEM
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
-    hanami-events (0.0.0)
     hanami-fabrication (0.1.0)
       fabrication (~> 2.16)
       hanami-utils (< 2.0)
@@ -256,6 +263,7 @@ GEM
     rack-test (0.8.2)
       rack (>= 1.0, < 3)
     rake (12.3.0)
+    redis (4.0.1)
     rom (3.3.3)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.3)
@@ -321,6 +329,7 @@ DEPENDENCIES
   authorizenet
   byebug
   capybara
+  connection_pool
   curb
   database_cleaner
   dotenv (~> 2.0)
@@ -334,7 +343,7 @@ DEPENDENCIES
   hanami-assets!
   hanami-cli!
   hanami-controller!
-  hanami-events
+  hanami-events!
   hanami-fabrication
   hanami-helpers!
   hanami-mailer!
@@ -352,6 +361,7 @@ DEPENDENCIES
   public_suffix (~> 1.5, >= 1.5.1)
   puma
   rake
+  redis
   rspec
   rspec-hanami!
   shotgun

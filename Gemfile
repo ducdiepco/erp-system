@@ -22,9 +22,11 @@ gem 'dry-monads'
 gem 'dry-system'
 gem 'dry-initializer'
 gem 'curb'
-gem 'hanami-events'
 gem 'hanami-serializer', github: 'davydovanton/hanami-serializer'
 gem 'authorizenet'
+gem 'hanami-events', github: 'hanami/events'
+gem 'redis'
+gem 'connection_pool'
 
 group :development do
   # Code reloading
