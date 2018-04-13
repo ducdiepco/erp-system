@@ -4,7 +4,7 @@ module PaymentApi::Commands
     include Import[
       merchant_repo:    'repositories.merchant',
       merchant_service: 'payment_api.services.merchant',
-      events: 'events'
+      # events: 'events'
     ]
 
     alias m method
