@@ -59,3 +59,5 @@ group :production do
   gem 'puma'
   gem 'public_suffix', '~> 1.5', '>= 1.5.1'
 end
+
+ruby "2.4.3"
