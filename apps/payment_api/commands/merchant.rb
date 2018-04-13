@@ -38,8 +38,10 @@ module PaymentApi::Commands
     end
 
     def broad_cast_event input, params, event
-      events.broadcast(event, params: params, input: input.to_hash)
-      input
+      return true
+      #WIP
+      # events.broadcast(event, params: params, input: input.to_hash)
+      # input
     end
 
   end
