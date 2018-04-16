@@ -46,3 +46,18 @@ newgrp docker
 ```
 
 ## Testing command line on production
+
+## HEROKU command lines
+```
+heroku logs --tail
+```
+```
+heroku run hanami console HANAMI_ENV=production
+```
+```
+heroku run rake db:migrate
+```
+### heroku deploy app
+```
+git push heroku master
+```

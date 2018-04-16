@@ -16,7 +16,7 @@ module PaymentApi
           value.failure? && value.respond_to?(:messages)
         end,
         resolve: -> value do
-          value.messages
+          {message: value.messages}
         end
       )
 
