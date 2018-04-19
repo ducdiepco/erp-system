@@ -22,6 +22,8 @@ module PaymentApi
       def charge_customer_with_card_id
         query = @credential
         query += "amount=" + entity.amount.to_s + "&"
+        # cvv is optinal
+        query += "cvv=" + entity.card_cvc + "&" if entity.card_cvc
         query += "customer_vault_id=" + entity.customer_id
         to_transaction(doPost(query))
       end

@@ -31,7 +31,7 @@ RSpec.describe PaymentApi::Controllers::Payments::CreateCustomerWithCard, type: 
       params[:is_type] = ''
       action = described_class.new
       response = action.call(params)
-      expect(response).to have_http_status(422)
+      expect(response).to have_http_status(200)
       expect(response).to match_in_body '["{\"is_type\":[\"must be filled\"]}"]'
     end
 
