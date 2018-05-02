@@ -24,6 +24,8 @@ module PaymentApi
         query += "amount=" + entity.amount.to_s + "&"
         # cvv is optinal
         query += "cvv=" + entity.card_cvc + "&" if entity.card_cvc
+        # order_id is optinal
+        query += "orderid=" + entity.order_id + "&" if entity.order_id
         query += "customer_vault_id=" + entity.customer_id
         to_transaction(doPost(query))
       end

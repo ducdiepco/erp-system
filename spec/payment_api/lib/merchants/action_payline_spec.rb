@@ -45,6 +45,7 @@ RSpec.describe PaymentApi::Merchants::Action, type: :lib do
           params = {
             customer_id: '1521341724',
             amount:      10,
+            order_id:    'order_id_111',
           }
           result = merchant.execute(
             params:     params,

@@ -9,6 +9,7 @@ module PaymentApi::Controllers::Payments
       required(:customer_id).filled
       optional(:card_id).maybe(:str?)
       optional(:card_cvc).maybe(:str?)
+      optional(:order_id).maybe(:str?)
 
       rule(card_id_presence: [:card_id, :is_type]) do |card_id, is_type|
         is_type.excluded_from?(%w(payline)).then(card_id.filled?)

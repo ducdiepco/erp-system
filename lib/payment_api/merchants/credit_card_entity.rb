@@ -16,6 +16,7 @@ class PaymentApi::Merchants::CreditCardEntity < Hanami::Entity
     attribute :card_id,        Types::Coercible::String
     attribute :customer_id,    Types::Coercible::String
     attribute :transaction_id, Types::Coercible::String
+    attribute :order_id,       Types::Coercible::String
   end
 
   def full_name
