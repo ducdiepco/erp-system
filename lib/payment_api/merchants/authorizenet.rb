@@ -51,7 +51,8 @@ module PaymentApi
         request.transactionRequest.profile = CustomerProfilePaymentType.new
         request.transactionRequest.profile.customerProfileId = entity.customer_id
         request.transactionRequest.profile.paymentProfile = PaymentProfile.new(entity.card_id)
-        request.transactionRequest.order = entity.order_id
+        request.transactionRequest.order               = OrderType.new
+        request.transactionRequest.order.invoiceNumber = entity.order_id
         response = handle_response(transaction.create_transaction(request))
         to_transaction(response)
       end
