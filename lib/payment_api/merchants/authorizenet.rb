@@ -94,7 +94,7 @@ module PaymentApi
         profile.billTo.state     = entity.state
         profile.billTo.state     = entity.state
         profile.billTo.country   = entity.country
-        profile.defaultPaymentProfile = true;
+        # profile.defaultPaymentProfile = true;
 
         request.paymentProfile = profile
         request.customerProfileId = entity.customer_id

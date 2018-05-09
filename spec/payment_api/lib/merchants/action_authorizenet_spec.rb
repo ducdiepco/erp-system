@@ -227,6 +227,21 @@ RSpec.describe PaymentApi::Merchants::Action, type: :lib do
         end
       end
 
+      it 'add second card to same client account' do
+        params[:card_number] = '4007000000027'
+        VCR.use_cassette "authorizenet add second card" do
+          result = merchant.execute(
+            params:     params,
+            action:     'add_card_to_existing_client',
+            credential: @credential
+          )
+          expect(result.card_id).to eq('1827384232')
+          expect(result.customer_id).to eq('1814508654')
+          expect(result.merchant).to eq('authorizenet')
+          expect(result.created_at).not_to eq nil
+        end
+      end
+
       it 'return error' do
         params[:card_number] = '44000000000'
         VCR.use_cassette "authorizenet add card by using wrong card number" do
